@@ -8,6 +8,7 @@
 //
 
 import UIKit
+import FlexButton
 
 final class FlexButtonExample: UIViewController {
     

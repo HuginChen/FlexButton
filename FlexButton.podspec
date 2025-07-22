@@ -56,7 +56,7 @@ FlexButton 是一个高度灵活的iOS按钮组件，基于UIView构建，提供
   s.source           = { :git => 'https://github.com/mac/FlexButton.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '15.0'
+  s.ios.deployment_target = '14.0'
   s.swift_versions = '5.0'
 
   s.source_files = 'FlexButton/Classes/**/*'

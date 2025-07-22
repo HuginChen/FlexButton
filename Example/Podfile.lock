@@ -1,0 +1,16 @@
+PODS:
+  - FlexButton (1.0.0)
+
+DEPENDENCIES:
+  - FlexButton (from `../`)
+
+EXTERNAL SOURCES:
+  FlexButton:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FlexButton: c5d55aee20df40aa07cf688ae23011121f73080f
+
+PODFILE CHECKSUM: 6739f364bc8f4ff4c3a9aef69467f0c443bbd13d
+
+COCOAPODS: 1.16.2

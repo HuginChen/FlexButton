@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		064C8AD12FD1153EE680CAAD3A132B91 /* Pods-FlexButton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B5A402EB75C9CB4F43FC1BD51DB19D /* Pods-FlexButton_Example-dummy.m */; };
+		14A9B8E8521D0294940F3FE39D271F7B /* Pods-FlexButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A01CD7C0E5D7A071E5B8608DBC8E5954 /* Pods-FlexButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17EE14A82FC1315480B98D57EA7BDCC8 /* FlexButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B097B96C34C1E7879CEB2127297D8370 /* FlexButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43E2EAAE18648C9A8C839EF8DD48915A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
+		5D50E9781F766B16F586907765B9840E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */; };
+		7AF4B2F8BB34309712854EBFC6B82C07 /* FlexButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9634E3B7B1CEAB5CDECD3EB8DFF3D3 /* FlexButton.swift */; };
+		B3AE4A77DD962D42A94A2E993EC9CD81 /* FlexButton_README.md in Sources */ = {isa = PBXBuildFile; fileRef = 4B10045ECCF9E5C3D685587968A46257 /* FlexButton_README.md */; };
+		B660F84A9646BB5DB1B2C271E69FB75A /* FlexButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C37112CBA7BF5879F23036D7A352813 /* FlexButton-dummy.m */; };
+		DB9B3C31E973F5FF62952406FDE1D4DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C482B372183F7670F60653F50EA7DDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFD28A8076A3D3542AD8169EF604E5A6;
+			remoteInfo = FlexButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B95DDC6A8F23A139C27D5C316A997F5 /* Pods-FlexButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlexButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1BEF603B00BBD96A16BD83213A21FEC0 /* Pods-FlexButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlexButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		3065EA81B3EB12BB46BE2BF3C0EF53A8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3191DACC7C9EB0BEED249C9A482975B9 /* Pods-FlexButton_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlexButton_Example-Info.plist"; sourceTree = "<group>"; };
+		37A052E09B974725F856A265FA31C9C4 /* Pods-FlexButton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlexButton_Example-frameworks.sh"; sourceTree = "<group>"; };
+		3B2EAF996F674E404FCFCD692CACB11F /* FlexButton */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlexButton; path = FlexButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B10045ECCF9E5C3D685587968A46257 /* FlexButton_README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = FlexButton_README.md; path = FlexButton/Classes/FlexButton_README.md; sourceTree = "<group>"; };
+		57AF75435F6C41D2A39DB48485DED0CC /* Pods-FlexButton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlexButton_Example.modulemap"; sourceTree = "<group>"; };
+		5D4BCF13A94D8140335B9764AB10BE58 /* Pods-FlexButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlexButton_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5E554BBC991F3C5FFD110035375E2D8C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7AB69B2BAABF83B22A40C0C5C6DDA15F /* Pods-FlexButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlexButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7BC9FF4EF9DCC3A6D15477422761653A /* FlexButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlexButton.modulemap; sourceTree = "<group>"; };
+		7DF0C1B09DD371B6A265F74057349FDD /* FlexButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FlexButton-Info.plist"; sourceTree = "<group>"; };
+		8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8C37112CBA7BF5879F23036D7A352813 /* FlexButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlexButton-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A01CD7C0E5D7A071E5B8608DBC8E5954 /* Pods-FlexButton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlexButton_Example-umbrella.h"; sourceTree = "<group>"; };
+		A0B5A402EB75C9CB4F43FC1BD51DB19D /* Pods-FlexButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlexButton_Example-dummy.m"; sourceTree = "<group>"; };
+		B097B96C34C1E7879CEB2127297D8370 /* FlexButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexButton-umbrella.h"; sourceTree = "<group>"; };
+		BC5ED3CFF4D89D4746BFF18724068656 /* FlexButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlexButton.debug.xcconfig; sourceTree = "<group>"; };
+		DB9634E3B7B1CEAB5CDECD3EB8DFF3D3 /* FlexButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexButton.swift; path = FlexButton/Classes/FlexButton.swift; sourceTree = "<group>"; };
+		DC159576FFD5A131EB8982AD6506808F /* Pods-FlexButton_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FlexButton_Example"; path = Pods_FlexButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F3C0A9B23A9C617A3BF7219EF035A85C /* FlexButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlexButton.release.xcconfig; sourceTree = "<group>"; };
+		F89B14568A74C306FA9379DB9E626D9F /* FlexButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FlexButton.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FD3F88DD4A09AC6DCFABADC256F371AA /* FlexButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexButton-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		096BF0B59A1FDAD5559BD54FF8880DAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E2EAAE18648C9A8C839EF8DD48915A /* Foundation.framework in Frameworks */,
+				5D50E9781F766B16F586907765B9840E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C564067299A6BA724B34BB0B0FDDB069 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB9B3C31E973F5FF62952406FDE1D4DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0856CFFB0CB5AAD3677FAC60A25B5397 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B2EAF996F674E404FCFCD692CACB11F /* FlexButton */,
+				DC159576FFD5A131EB8982AD6506808F /* Pods-FlexButton_Example */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DE6440B6853131A80C53DDA34375AAB /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1DE6440B6853131A80C53DDA34375AAB /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */,
+				ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		30845806EC6BCD00EBC597B7723E011E /* Pods-FlexButton_Example */ = {
+			isa = PBXGroup;
+			children = (
+				57AF75435F6C41D2A39DB48485DED0CC /* Pods-FlexButton_Example.modulemap */,
+				7AB69B2BAABF83B22A40C0C5C6DDA15F /* Pods-FlexButton_Example-acknowledgements.markdown */,
+				1BEF603B00BBD96A16BD83213A21FEC0 /* Pods-FlexButton_Example-acknowledgements.plist */,
+				A0B5A402EB75C9CB4F43FC1BD51DB19D /* Pods-FlexButton_Example-dummy.m */,
+				37A052E09B974725F856A265FA31C9C4 /* Pods-FlexButton_Example-frameworks.sh */,
+				3191DACC7C9EB0BEED249C9A482975B9 /* Pods-FlexButton_Example-Info.plist */,
+				A01CD7C0E5D7A071E5B8608DBC8E5954 /* Pods-FlexButton_Example-umbrella.h */,
+				0B95DDC6A8F23A139C27D5C316A997F5 /* Pods-FlexButton_Example.debug.xcconfig */,
+				5D4BCF13A94D8140335B9764AB10BE58 /* Pods-FlexButton_Example.release.xcconfig */,
+			);
+			name = "Pods-FlexButton_Example";
+			path = "Target Support Files/Pods-FlexButton_Example";
+			sourceTree = "<group>";
+		};
+		332F207774F699812D5FCA6B70908E89 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F89B14568A74C306FA9379DB9E626D9F /* FlexButton.podspec */,
+				3065EA81B3EB12BB46BE2BF3C0EF53A8 /* LICENSE */,
+				5E554BBC991F3C5FFD110035375E2D8C /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		4B1D1EFB892610BC3D32C4287C67FF14 /* FlexButton */ = {
+			isa = PBXGroup;
+			children = (
+				DB9634E3B7B1CEAB5CDECD3EB8DFF3D3 /* FlexButton.swift */,
+				4B10045ECCF9E5C3D685587968A46257 /* FlexButton_README.md */,
+				332F207774F699812D5FCA6B70908E89 /* Pod */,
+				A396C0566767E7610F750402ED24DDEF /* Support Files */,
+			);
+			name = FlexButton;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		8D1E9F541BF865353A5993AE203E237C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B1D1EFB892610BC3D32C4287C67FF14 /* FlexButton */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A396C0566767E7610F750402ED24DDEF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BC9FF4EF9DCC3A6D15477422761653A /* FlexButton.modulemap */,
+				8C37112CBA7BF5879F23036D7A352813 /* FlexButton-dummy.m */,
+				7DF0C1B09DD371B6A265F74057349FDD /* FlexButton-Info.plist */,
+				FD3F88DD4A09AC6DCFABADC256F371AA /* FlexButton-prefix.pch */,
+				B097B96C34C1E7879CEB2127297D8370 /* FlexButton-umbrella.h */,
+				BC5ED3CFF4D89D4746BFF18724068656 /* FlexButton.debug.xcconfig */,
+				F3C0A9B23A9C617A3BF7219EF035A85C /* FlexButton.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FlexButton";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				8D1E9F541BF865353A5993AE203E237C /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				0856CFFB0CB5AAD3677FAC60A25B5397 /* Products */,
+				FC8310D9C913CC3B9BD89C1037ADDFA0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		FC8310D9C913CC3B9BD89C1037ADDFA0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				30845806EC6BCD00EBC597B7723E011E /* Pods-FlexButton_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		493DE0E6C442574FD861E15517394685 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17EE14A82FC1315480B98D57EA7BDCC8 /* FlexButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		759CDFF91239AA65C3D804FAB4CD3BC0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14A9B8E8521D0294940F3FE39D271F7B /* Pods-FlexButton_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5B0BB9E423738195C23E5D84804B1EC9 /* Pods-FlexButton_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F8615AD24FB588B281C60728A4A4565 /* Build configuration list for PBXNativeTarget "Pods-FlexButton_Example" */;
+			buildPhases = (
+				759CDFF91239AA65C3D804FAB4CD3BC0 /* Headers */,
+				2FCBAE42F6D1579019A3BFAF82ED2444 /* Sources */,
+				C564067299A6BA724B34BB0B0FDDB069 /* Frameworks */,
+				CC7B21B4FE6BA67CB21D5DFB425CBC47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A229BD4E0692BB0B43939A3D617282D1 /* PBXTargetDependency */,
+			);
+			name = "Pods-FlexButton_Example";
+			productName = Pods_FlexButton_Example;
+			productReference = DC159576FFD5A131EB8982AD6506808F /* Pods-FlexButton_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		DFD28A8076A3D3542AD8169EF604E5A6 /* FlexButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA912E4017D1FD94F363D0D66DAD9066 /* Build configuration list for PBXNativeTarget "FlexButton" */;
+			buildPhases = (
+				493DE0E6C442574FD861E15517394685 /* Headers */,
+				E2099A3C6E386063875C12F6A2D21D5E /* Sources */,
+				096BF0B59A1FDAD5559BD54FF8880DAC /* Frameworks */,
+				59BCAADE50CAD3071ED4A1C85DBD2C76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlexButton;
+			productName = FlexButton;
+			productReference = 3B2EAF996F674E404FCFCD692CACB11F /* FlexButton */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0856CFFB0CB5AAD3677FAC60A25B5397 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFD28A8076A3D3542AD8169EF604E5A6 /* FlexButton */,
+				5B0BB9E423738195C23E5D84804B1EC9 /* Pods-FlexButton_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59BCAADE50CAD3071ED4A1C85DBD2C76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7B21B4FE6BA67CB21D5DFB425CBC47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FCBAE42F6D1579019A3BFAF82ED2444 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				064C8AD12FD1153EE680CAAD3A132B91 /* Pods-FlexButton_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2099A3C6E386063875C12F6A2D21D5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AF4B2F8BB34309712854EBFC6B82C07 /* FlexButton.swift in Sources */,
+				B660F84A9646BB5DB1B2C271E69FB75A /* FlexButton-dummy.m in Sources */,
+				B3AE4A77DD962D42A94A2E993EC9CD81 /* FlexButton_README.md in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A229BD4E0692BB0B43939A3D617282D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlexButton;
+			target = DFD28A8076A3D3542AD8169EF604E5A6 /* FlexButton */;
+			targetProxy = 3C482B372183F7670F60653F50EA7DDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		47841C6137995EF00FDEFDC6835FF4EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D4BCF13A94D8140335B9764AB10BE58 /* Pods-FlexButton_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-FlexButton_Example/Pods-FlexButton_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlexButton_Example/Pods-FlexButton_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		62C2595245E047577D78952500DB606D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B95DDC6A8F23A139C27D5C316A997F5 /* Pods-FlexButton_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-FlexButton_Example/Pods-FlexButton_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlexButton_Example/Pods-FlexButton_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		823BD649FB5DDF7C3FBDCFF0C334D848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC5ED3CFF4D89D4746BFF18724068656 /* FlexButton.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/FlexButton/FlexButton-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/FlexButton/FlexButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FlexButton/FlexButton.modulemap";
+				PRODUCT_MODULE_NAME = FlexButton;
+				PRODUCT_NAME = FlexButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		945CA3C912259A23C07736680B50748F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3C0A9B23A9C617A3BF7219EF035A85C /* FlexButton.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/FlexButton/FlexButton-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/FlexButton/FlexButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FlexButton/FlexButton.modulemap";
+				PRODUCT_MODULE_NAME = FlexButton;
+				PRODUCT_NAME = FlexButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F8615AD24FB588B281C60728A4A4565 /* Build configuration list for PBXNativeTarget "Pods-FlexButton_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62C2595245E047577D78952500DB606D /* Debug */,
+				47841C6137995EF00FDEFDC6835FF4EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA912E4017D1FD94F363D0D66DAD9066 /* Build configuration list for PBXNativeTarget "FlexButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				823BD649FB5DDF7C3FBDCFF0C334D848 /* Debug */,
+				945CA3C912259A23C07736680B50748F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

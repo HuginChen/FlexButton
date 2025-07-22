@@ -10,7 +10,7 @@
 import UIKit
 
 
-extension FlexButton {
+public extension FlexButton {
     /// 内容排列方式
     enum FlexButtonLayout {
         case imageLeft    // 图片在左，文字在右
@@ -51,12 +51,12 @@ extension FlexButton {
     }
 } 
 
-final class FlexButton: UIView {
+public final class FlexButton: UIView {
     
     // MARK: - Public Properties
     
     /// 内容排列方式
-    var layout: FlexButtonLayout = .imageLeft {
+    public var layout: FlexButtonLayout = .imageLeft {
         didSet {
             invalidateSizeCache()
             updateLayout()
@@ -65,7 +65,7 @@ final class FlexButton: UIView {
     }
     
     /// 图片和文字之间的间距
-    var spacing: CGFloat = 8 {
+    public var spacing: CGFloat = 8 {
         didSet {
             invalidateSizeCache()
             stackView.spacing = spacing
@@ -75,7 +75,7 @@ final class FlexButton: UIView {
     }
     
     /// 按钮内边距
-    var contentInsets: UIEdgeInsets = UIEdgeInsets(top: 12, left: 16, bottom: 12, right: 16) {
+    public var contentInsets: UIEdgeInsets = UIEdgeInsets(top: 12, left: 16, bottom: 12, right: 16) {
         didSet {
             invalidateSizeCache()
             updateLayout()
@@ -84,7 +84,7 @@ final class FlexButton: UIView {
     }
     
     /// 图片大小
-    var imageSize: CGSize = CGSize(width: 20, height: 20) {
+    public var imageSize: CGSize = CGSize(width: 20, height: 20) {
         didSet {
             invalidateSizeCache()
             updateImageSizeConstraints()
@@ -92,7 +92,7 @@ final class FlexButton: UIView {
     }
     
     /// 内容对齐方式
-    var contentAlignment: ContentAlignment = .center {
+    public var contentAlignment: ContentAlignment = .center {
         didSet {
             updateLayout()
         }
@@ -111,47 +111,49 @@ final class FlexButton: UIView {
     private(set) var backgroundView: UIView?
     
     /// 是否启用点击动画效果
-    var isAnimationEnabled: Bool = true
+    public var isAnimationEnabled: Bool = true
     
     /// 点击动画类型
-    var animationType: AnimationType = .scale
+    public var animationType: AnimationType = .scale
     
     /// 图片视图
-    let imageView = UIImageView()
+    public let imageView = UIImageView()
     
     /// 文字标签
-    let titleLabel = UILabel()
+    public let titleLabel = UILabel()
     
     /// 当前图片（只读，通过状态管理设置）
-    var currentImage: UIImage? {
+    public var currentImage: UIImage? {
         return imageView.image
     }
     
     /// 当前文字（只读，通过状态管理设置）
-    var currentTitle: String? {
+    public var currentTitle: String? {
         return titleLabel.text
     }
     
     /// 点击回调
-    var onTap: ((_ sender: FlexButton) -> Void)?
+    public var onTap: ((_ sender: FlexButton) -> Void)?
     
     /// 当前状态
-    private(set) var currentState: ButtonState = .normal
+    public private(set) var currentState: ButtonState = .normal
     
     /// 状态配置
     private var stateConfigs: [ButtonState: StateConfig] = [:]
     
     /// 状态配置结构
-    struct StateConfig {
-        var backgroundColor: UIColor?
-        var imageTintColor: UIColor?
-        var titleColor: UIColor?
-        var titleFont: UIFont?
-        var backgroundView: UIView?
-        var image: UIImage?
-        var title: String?
-        var customImageSize: CGSize?
-        var alpha: CGFloat = 1.0
+    public struct StateConfig {
+        public var backgroundColor: UIColor?
+        public var imageTintColor: UIColor?
+        public var titleColor: UIColor?
+        public var titleFont: UIFont?
+        public var backgroundView: UIView?
+        public var image: UIImage?
+        public var title: String?
+        public var customImageSize: CGSize?
+        public var alpha: CGFloat = 1.0
+        
+        public init() {}
     }
     
     // MARK: - Private Properties
@@ -163,7 +165,7 @@ final class FlexButton: UIView {
     private var isCircular: Bool = false
     
     // MARK: - Layout Override for Auto Updates
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         
         // 在布局完成后更新圆形圆角（如果启用）
@@ -189,7 +191,7 @@ final class FlexButton: UIView {
     }
     
     /// 便捷初始化方法
-    convenience init(
+    public convenience init(
         image: UIImage? = nil,
         title: String? = nil,
         layout: FlexButtonLayout = .imageLeft,
@@ -225,7 +227,7 @@ final class FlexButton: UIView {
     // MARK: - Public Methods
     
     /// 配置按钮内容
-    func configure(
+    public func configure(
         image: UIImage? = nil,
         title: String? = nil,
         layout: FlexButtonLayout = .imageLeft,
@@ -315,22 +317,22 @@ final class FlexButton: UIView {
     }
     
     /// 设置内容对齐方式
-    func setContentAlignment(_ alignment: ContentAlignment) {
+    public func setContentAlignment(_ alignment: ContentAlignment) {
         contentAlignment = alignment
     }
     
     /// 设置动画开关
-    func setAnimationEnabled(_ enabled: Bool) {
+    public func setAnimationEnabled(_ enabled: Bool) {
         isAnimationEnabled = enabled
     }
     
     /// 设置动画类型
-    func setAnimationType(_ type: AnimationType) {
+    public func setAnimationType(_ type: AnimationType) {
         animationType = type
     }
     
     /// 重置固定尺寸标记，恢复完全自适应行为
-    func resetFixedSize() {
+    public func resetFixedSize() {
         fixedSize = nil
         updateSizeIfNeeded()
     }
@@ -338,19 +340,19 @@ final class FlexButton: UIView {
     // MARK: - Convenience Methods
     
     /// 设置圆角
-    func setCornerRadius(_ radius: CGFloat) {
+    public func setCornerRadius(_ radius: CGFloat) {
         layer.cornerRadius = radius
         layer.masksToBounds = radius > 0
     }
     
     /// 设置边框
-    func setBorder(width: CGFloat, color: UIColor) {
+    public func setBorder(width: CGFloat, color: UIColor) {
         layer.borderWidth = width
         layer.borderColor = color.cgColor
     }
     
     /// 设置阴影
-    func setShadow(color: UIColor = .black, opacity: Float = 0.3, offset: CGSize = CGSize(width: 0, height: 2), radius: CGFloat = 4) {
+    public func setShadow(color: UIColor = .black, opacity: Float = 0.3, offset: CGSize = CGSize(width: 0, height: 2), radius: CGFloat = 4) {
         layer.shadowColor = color.cgColor
         layer.shadowOpacity = opacity
         layer.shadowOffset = offset
@@ -359,7 +361,7 @@ final class FlexButton: UIView {
     }
     
     /// 设置为自适应圆形按钮（会根据尺寸变化自动调整）
-    func setCircularMode(_ enabled: Bool) {
+    public func setCircularMode(_ enabled: Bool) {
         isCircular = enabled
         if enabled {
             updateCircularCornerIfNeeded()
@@ -371,7 +373,7 @@ final class FlexButton: UIView {
     }
     
     /// 当前是否处于圆形模式
-    var isCircularMode: Bool {
+    public var isCircularMode: Bool {
         return isCircular
     }
       
@@ -396,7 +398,7 @@ final class FlexButton: UIView {
     /// - 与Auto Layout约束不同：约束是强制固定，此方法是智能最小尺寸
     /// - 支持Frame和Auto Layout两种布局模式
     /// - 计算规则：实际尺寸 = max(最小尺寸, 内容实际尺寸)
-    func setFixedSize(width: CGFloat, height: CGFloat) {
+    public func setFixedSize(width: CGFloat, height: CGFloat) {
         // 🔧 自动修复：重置可能卡住的动画transform
         resetAnimationState()
         
@@ -412,7 +414,7 @@ final class FlexButton: UIView {
     }
     
     /// 便捷方法：设置位置和尺寸
-    func setPosition(x: CGFloat, y: CGFloat, width: CGFloat? = nil, height: CGFloat? = nil) {
+    public func setPosition(x: CGFloat, y: CGFloat, width: CGFloat? = nil, height: CGFloat? = nil) {
         // 确保使用 frame 布局
         translatesAutoresizingMaskIntoConstraints = true
         
@@ -444,7 +446,7 @@ final class FlexButton: UIView {
     }
     
     /// Auto Layout 约束设置方法
-    func setupConstraints(
+    public func setupConstraints(
         to view: UIView,
         top: NSLayoutYAxisAnchor? = nil,
         leading: NSLayoutXAxisAnchor? = nil,
@@ -581,7 +583,7 @@ final class FlexButton: UIView {
     }
     
     // MARK: - Touch Handling
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    public override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)
         
         // 检查是否在按钮范围内
@@ -591,7 +593,7 @@ final class FlexButton: UIView {
                 // 执行点击动画
                 if isAnimationEnabled {
                     performTapAnimation()
-                }
+                } 
                 
                 onTap?(self)
             }
@@ -663,7 +665,7 @@ final class FlexButton: UIView {
     }
     
     // MARK: - Intrinsic Content Size
-    override var intrinsicContentSize: CGSize {
+    public override var intrinsicContentSize: CGSize {
         // 如果使用 frame 布局，不提供 intrinsic size
         if translatesAutoresizingMaskIntoConstraints {
             return CGSize(width: UIView.noIntrinsicMetric, height: UIView.noIntrinsicMetric)
@@ -780,14 +782,14 @@ final class FlexButton: UIView {
     // MARK: - State Management
     
     /// 设置状态
-    func setState(_ state: ButtonState, animated: Bool = true) {
+    public func setState(_ state: ButtonState, animated: Bool = true) {
         guard state != currentState else { return }
         currentState = state
         updateAppearance(animated: animated)
     }
     
     /// 设置指定状态的背景色
-    func setBackgroundColor(_ color: UIColor?, for state: ButtonState) {
+    public func setBackgroundColor(_ color: UIColor?, for state: ButtonState) {
         ensureStateConfig(for: state)
         stateConfigs[state]?.backgroundColor = color
         if currentState == state {
@@ -796,7 +798,7 @@ final class FlexButton: UIView {
     }
     
     /// 设置指定状态的图片颜色
-    func setImageTintColor(_ color: UIColor?, for state: ButtonState) {
+    public func setImageTintColor(_ color: UIColor?, for state: ButtonState) {
         ensureStateConfig(for: state)
         stateConfigs[state]?.imageTintColor = color
         if currentState == state {
@@ -805,7 +807,7 @@ final class FlexButton: UIView {
     }
     
     /// 设置指定状态的文字颜色
-    func setTitleColor(_ color: UIColor?, for state: ButtonState) {
+    public func setTitleColor(_ color: UIColor?, for state: ButtonState) {
         ensureStateConfig(for: state)
         stateConfigs[state]?.titleColor = color
         if currentState == state {
@@ -814,7 +816,7 @@ final class FlexButton: UIView {
     }
     
     /// 设置指定状态的透明度
-    func setAlpha(_ alpha: CGFloat, for state: ButtonState) {
+    public func setAlpha(_ alpha: CGFloat, for state: ButtonState) {
         ensureStateConfig(for: state)
         stateConfigs[state]?.alpha = alpha
         if currentState == state {
@@ -823,7 +825,7 @@ final class FlexButton: UIView {
     }
     
     /// 设置指定状态的字体
-    func setTitleFont(_ font: UIFont?, for state: ButtonState) {
+    public func setTitleFont(_ font: UIFont?, for state: ButtonState) {
         ensureStateConfig(for: state)
         stateConfigs[state]?.titleFont = font
         if currentState == state {
@@ -832,7 +834,7 @@ final class FlexButton: UIView {
     }
     
     /// 设置指定状态的背景视图
-    func setBackgroundView(_ view: UIView?, for state: ButtonState) {
+    public func setBackgroundView(_ view: UIView?, for state: ButtonState) {
         ensureStateConfig(for: state)
         stateConfigs[state]?.backgroundView = view
         if currentState == state {
@@ -841,7 +843,7 @@ final class FlexButton: UIView {
     }
     
     /// 设置指定状态的图片
-    func setImage(_ image: UIImage?, for state: ButtonState) {
+    public func setImage(_ image: UIImage?, for state: ButtonState) {
         ensureStateConfig(for: state)
         stateConfigs[state]?.image = image
         if currentState == state {
@@ -850,7 +852,7 @@ final class FlexButton: UIView {
     }
     
     /// 设置指定状态的文字
-    func setTitle(_ title: String?, for state: ButtonState) {
+    public func setTitle(_ title: String?, for state: ButtonState) {
         ensureStateConfig(for: state)
         stateConfigs[state]?.title = title
         if currentState == state {
@@ -859,7 +861,7 @@ final class FlexButton: UIView {
     }
     
     /// 设置指定状态的图片大小
-    func setImageSize(_ size: CGSize?, for state: ButtonState) {
+    public func setImageSize(_ size: CGSize?, for state: ButtonState) {
         ensureStateConfig(for: state)
         stateConfigs[state]?.customImageSize = size
         if currentState == state {

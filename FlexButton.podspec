@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FlexButton'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = '灵活的iOS按钮组件，支持图文混排、状态管理、动画效果和自适应尺寸'
 
 # This description is used to generate tags and improve search results.
@@ -56,7 +56,7 @@ FlexButton 是一个高度灵活的iOS按钮组件，基于UIView构建，提供
   s.source           = { :git => 'https://github.com/HuginChen/FlexButton.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '14.0'
+  s.ios.deployment_target = '13.0'
   s.swift_versions = '5.0'
 
   s.source_files = 'FlexButton/Classes/**/*'

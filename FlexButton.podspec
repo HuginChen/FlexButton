@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FlexButton'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = '灵活的iOS按钮组件，支持图文混排、状态管理、动画效果和自适应尺寸'
 
 # This description is used to generate tags and improve search results.

@@ -194,7 +194,7 @@ public final class FlexButton: UIView {
         image: UIImage? = nil,
         title: String? = nil,
         layout: FlexButtonLayout = .imageLeft,
-        backgroundColor: UIColor = .white,
+        backgroundColor: UIColor = .blue,
         backgroundView: UIView? = nil,
         imageTintColor: UIColor? = nil,
         titleColor: UIColor = .white,

@@ -13,7 +13,6 @@
 		43E2EAAE18648C9A8C839EF8DD48915A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
 		5D50E9781F766B16F586907765B9840E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */; };
 		7AF4B2F8BB34309712854EBFC6B82C07 /* FlexButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9634E3B7B1CEAB5CDECD3EB8DFF3D3 /* FlexButton.swift */; };
-		B3AE4A77DD962D42A94A2E993EC9CD81 /* FlexButton_README.md in Sources */ = {isa = PBXBuildFile; fileRef = 4B10045ECCF9E5C3D685587968A46257 /* FlexButton_README.md */; };
 		B660F84A9646BB5DB1B2C271E69FB75A /* FlexButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C37112CBA7BF5879F23036D7A352813 /* FlexButton-dummy.m */; };
 		DB9B3C31E973F5FF62952406FDE1D4DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -29,31 +28,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		045F57E52E2F9DFC009FEFB5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0B95DDC6A8F23A139C27D5C316A997F5 /* Pods-FlexButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlexButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1BEF603B00BBD96A16BD83213A21FEC0 /* Pods-FlexButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlexButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		3065EA81B3EB12BB46BE2BF3C0EF53A8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3065EA81B3EB12BB46BE2BF3C0EF53A8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3191DACC7C9EB0BEED249C9A482975B9 /* Pods-FlexButton_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlexButton_Example-Info.plist"; sourceTree = "<group>"; };
 		37A052E09B974725F856A265FA31C9C4 /* Pods-FlexButton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlexButton_Example-frameworks.sh"; sourceTree = "<group>"; };
-		3B2EAF996F674E404FCFCD692CACB11F /* FlexButton */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlexButton; path = FlexButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B10045ECCF9E5C3D685587968A46257 /* FlexButton_README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = FlexButton_README.md; path = FlexButton/Classes/FlexButton_README.md; sourceTree = "<group>"; };
+		3B2EAF996F674E404FCFCD692CACB11F /* FlexButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlexButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57AF75435F6C41D2A39DB48485DED0CC /* Pods-FlexButton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlexButton_Example.modulemap"; sourceTree = "<group>"; };
 		5D4BCF13A94D8140335B9764AB10BE58 /* Pods-FlexButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlexButton_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5E554BBC991F3C5FFD110035375E2D8C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		5E554BBC991F3C5FFD110035375E2D8C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7AB69B2BAABF83B22A40C0C5C6DDA15F /* Pods-FlexButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlexButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7BC9FF4EF9DCC3A6D15477422761653A /* FlexButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlexButton.modulemap; sourceTree = "<group>"; };
 		7DF0C1B09DD371B6A265F74057349FDD /* FlexButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FlexButton-Info.plist"; sourceTree = "<group>"; };
 		8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		8C37112CBA7BF5879F23036D7A352813 /* FlexButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlexButton-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A01CD7C0E5D7A071E5B8608DBC8E5954 /* Pods-FlexButton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlexButton_Example-umbrella.h"; sourceTree = "<group>"; };
 		A0B5A402EB75C9CB4F43FC1BD51DB19D /* Pods-FlexButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlexButton_Example-dummy.m"; sourceTree = "<group>"; };
 		B097B96C34C1E7879CEB2127297D8370 /* FlexButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexButton-umbrella.h"; sourceTree = "<group>"; };
 		BC5ED3CFF4D89D4746BFF18724068656 /* FlexButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlexButton.debug.xcconfig; sourceTree = "<group>"; };
 		DB9634E3B7B1CEAB5CDECD3EB8DFF3D3 /* FlexButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexButton.swift; path = FlexButton/Classes/FlexButton.swift; sourceTree = "<group>"; };
-		DC159576FFD5A131EB8982AD6506808F /* Pods-FlexButton_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FlexButton_Example"; path = Pods_FlexButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC159576FFD5A131EB8982AD6506808F /* Pods_FlexButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		F3C0A9B23A9C617A3BF7219EF035A85C /* FlexButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlexButton.release.xcconfig; sourceTree = "<group>"; };
-		F89B14568A74C306FA9379DB9E626D9F /* FlexButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FlexButton.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F89B14568A74C306FA9379DB9E626D9F /* FlexButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FlexButton.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FD3F88DD4A09AC6DCFABADC256F371AA /* FlexButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexButton-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,8 +80,8 @@
 		0856CFFB0CB5AAD3677FAC60A25B5397 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3B2EAF996F674E404FCFCD692CACB11F /* FlexButton */,
-				DC159576FFD5A131EB8982AD6506808F /* Pods-FlexButton_Example */,
+				3B2EAF996F674E404FCFCD692CACB11F /* FlexButton.framework */,
+				DC159576FFD5A131EB8982AD6506808F /* Pods_FlexButton_Example.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,8 +133,8 @@
 		4B1D1EFB892610BC3D32C4287C67FF14 /* FlexButton */ = {
 			isa = PBXGroup;
 			children = (
+				045F57E52E2F9DFC009FEFB5 /* README.md */,
 				DB9634E3B7B1CEAB5CDECD3EB8DFF3D3 /* FlexButton.swift */,
-				4B10045ECCF9E5C3D685587968A46257 /* FlexButton_README.md */,
 				332F207774F699812D5FCA6B70908E89 /* Pod */,
 				A396C0566767E7610F750402ED24DDEF /* Support Files */,
 			);
@@ -223,7 +222,7 @@
 			);
 			name = "Pods-FlexButton_Example";
 			productName = Pods_FlexButton_Example;
-			productReference = DC159576FFD5A131EB8982AD6506808F /* Pods-FlexButton_Example */;
+			productReference = DC159576FFD5A131EB8982AD6506808F /* Pods_FlexButton_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DFD28A8076A3D3542AD8169EF604E5A6 /* FlexButton */ = {
@@ -241,7 +240,7 @@
 			);
 			name = FlexButton;
 			productName = FlexButton;
-			productReference = 3B2EAF996F674E404FCFCD692CACB11F /* FlexButton */;
+			productReference = 3B2EAF996F674E404FCFCD692CACB11F /* FlexButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -262,8 +261,6 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			minimizedProjectReferenceProxies = 0;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 0856CFFB0CB5AAD3677FAC60A25B5397 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -306,7 +303,6 @@
 			files = (
 				7AF4B2F8BB34309712854EBFC6B82C07 /* FlexButton.swift in Sources */,
 				B660F84A9646BB5DB1B2C271E69FB75A /* FlexButton-dummy.m in Sources */,
-				B3AE4A77DD962D42A94A2E993EC9CD81 /* FlexButton_README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,8 +585,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

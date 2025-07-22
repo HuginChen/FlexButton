@@ -7,36 +7,7 @@
 //  灵活按钮组件：支持图文混排、纯图片、纯文字、状态管理、动画效果等多种布局模式
 //
 
-import UIKit
-
-// MARK: - iOS 11+ 兼容性扩展
-@available(iOS 11.0, *)
-extension UIColor {
-    static var flexSystemBlue: UIColor {
-        if #available(iOS 13.0, *) {
-            return .systemBlue
-        } else {
-            return UIColor(red: 0.0, green: 0.478, blue: 1.0, alpha: 1.0) // iOS 12的系统蓝色
-        }
-    }
-    
-    static var flexLabel: UIColor {
-        if #available(iOS 13.0, *) {
-            return .label
-        } else {
-            return .black
-        }
-    }
-    
-    static var flexSystemBackground: UIColor {
-        if #available(iOS 13.0, *) {
-            return .systemBackground
-        } else {
-            return .white
-        }
-    }
-}
-
+import UIKit 
 
 public extension FlexButton {
     /// 内容排列方式
@@ -223,7 +194,7 @@ public final class FlexButton: UIView {
         image: UIImage? = nil,
         title: String? = nil,
         layout: FlexButtonLayout = .imageLeft,
-        backgroundColor: UIColor = .flexSystemBlue,
+        backgroundColor: UIColor = .white,
         backgroundView: UIView? = nil,
         imageTintColor: UIColor? = nil,
         titleColor: UIColor = .white,
@@ -581,12 +552,12 @@ public final class FlexButton: UIView {
         // 设置图片视图
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
-        imageView.tintColor = .flexSystemBlue
+        imageView.tintColor = .systemBlue
         
         // 设置文字标签
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.font = titleFont
-        titleLabel.textColor = .flexSystemBlue
+        titleLabel.textColor = .systemBlue
         titleLabel.textAlignment = .center
         titleLabel.numberOfLines = 1
         titleLabel.adjustsFontForContentSizeCategory = false

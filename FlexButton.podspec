@@ -49,11 +49,11 @@ FlexButton 是一个高度灵活的iOS按钮组件，基于UIView构建，提供
 适用于各种场景：导航按钮、工具栏、表单提交、社交分享等。
                        DESC
 
-  s.homepage         = 'https://github.com/mac/FlexButton'
+  s.homepage         = 'https://github.com/HuginChen/FlexButton'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'mac' => 'developer@example.com' }
-  s.source           = { :git => 'https://github.com/mac/FlexButton.git', :tag => s.version.to_s }
+  s.author           = { 'HuginChen' => 'huginn.chen@gmail.com' }
+  s.source           = { :git => 'https://github.com/HuginChen/FlexButton.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '14.0'

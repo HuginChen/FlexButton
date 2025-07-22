@@ -1,0 +1,25 @@
+{
+  "name": "FlexButton",
+  "version": "1.0.0",
+  "summary": "灵活的iOS按钮组件，支持图文混排、状态管理、动画效果和自适应尺寸",
+  "description": "FlexButton 是一个高度灵活的iOS按钮组件，基于UIView构建，提供以下核心功能：\n\n🎨 多样化布局支持\n• 支持图片和文字的多种排列方式（左右上下）\n• 灵活的内容对齐选项\n• 可自定义间距和内边距\n\n📐 智能尺寸管理\n• 自适应内容尺寸计算\n• 支持最小尺寸约束\n• 完美兼容AutoLayout和Frame布局\n\n🎭 状态管理系统\n• 支持normal、selected、disabled等多种状态\n• 每种状态可独立配置外观属性\n• 平滑的状态切换动画\n\n✨ 丰富的动画效果\n• 内置多种点击动画（缩放、弹跳、闪烁等）\n• 支持自定义动画类型\n• 可配置动画开关\n\n🎯 实用便捷功能\n• 圆角、边框、阴影快速设置\n• 自适应圆形按钮模式\n• 渐变背景视图支持\n• 完整的无障碍支持\n\n适用于各种场景：导航按钮、工具栏、表单提交、社交分享等。",
+  "homepage": "https://github.com/mac/FlexButton",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mac": "developer@example.com"
+  },
+  "source": {
+    "git": "https://github.com/mac/FlexButton.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "15.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "FlexButton/Classes/**/*",
+  "frameworks": "UIKit",
+  "swift_version": "5.0"
+}

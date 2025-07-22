@@ -3,11 +3,5 @@ use_frameworks!
 platform :ios, '10.0'
 
 target 'FlexButton_Example' do
-  pod 'FlexButton', :path => '../'
-
-  target 'FlexButton_Tests' do
-    inherit! :search_paths
-
-    pod 'FBSnapshotTestCase' , '~> 2.1.4'
-  end
+  pod 'FlexButton', :path => '../' 
 end

@@ -1,5 +1,4 @@
-import XCTest
-import FlexButton
+import XCTest 
 
 class Tests: XCTestCase {
     

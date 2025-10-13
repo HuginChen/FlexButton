@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FlexButton'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = '灵活的iOS按钮组件，支持图文混排、状态管理、动画效果和自适应尺寸'
 
 # This description is used to generate tags and improve search results.
@@ -28,6 +28,7 @@ FlexButton 是一个高度灵活的iOS按钮组件，基于UIView构建，提供
 📐 智能尺寸管理
 • 自适应内容尺寸计算
 • 支持最小尺寸约束
+• 可禁用最小触摸目标限制（44pt）
 • 完美兼容AutoLayout和Frame布局
 
 🎭 状态管理系统

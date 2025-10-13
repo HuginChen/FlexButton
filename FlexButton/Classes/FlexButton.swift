@@ -115,6 +115,15 @@ public final class FlexButton: UIView {
     /// 点击动画类型
     public var animationType: AnimationType = .scale
     
+    /// 是否禁用最小触摸目标尺寸限制
+    /// 当设置为true时，按钮尺寸将完全基于内容计算，不受44pt最小尺寸限制
+    public var isMinimumTouchTargetDisabled: Bool = false {
+        didSet {
+            invalidateSizeCache()
+            updateSizeIfNeeded()
+        }
+    }
+    
     /// 图片视图
     public let imageView = UIImageView()
     
@@ -203,6 +212,7 @@ public final class FlexButton: UIView {
         customImageSize: CGSize? = nil,
         isAnimationEnabled: Bool = true,
         animationType: AnimationType = .scale,
+        isMinimumTouchTargetDisabled: Bool = false,
         onTap: ((_ sender: FlexButton) -> Void)? = nil
     ) {
         self.init(frame: .zero)
@@ -219,6 +229,7 @@ public final class FlexButton: UIView {
             customImageSize: customImageSize,
             isAnimationEnabled: isAnimationEnabled,
             animationType: animationType,
+            isMinimumTouchTargetDisabled: isMinimumTouchTargetDisabled,
             onTap: onTap
         )
     }
@@ -239,6 +250,7 @@ public final class FlexButton: UIView {
         customImageSize: CGSize? = nil,
         isAnimationEnabled: Bool? = nil,
         animationType: AnimationType? = nil,
+        isMinimumTouchTargetDisabled: Bool? = nil,
         onTap: ((_ sender: FlexButton) -> Void)? = nil
     ) {
         // 设置全局属性（不参与状态管理）
@@ -252,6 +264,9 @@ public final class FlexButton: UIView {
         }
         if let animationType = animationType {
             self.animationType = animationType
+        }
+        if let isMinimumTouchTargetDisabled = isMinimumTouchTargetDisabled {
+            self.isMinimumTouchTargetDisabled = isMinimumTouchTargetDisabled
         }
         
         updateLayout()
@@ -328,6 +343,11 @@ public final class FlexButton: UIView {
     /// 设置动画类型
     public func setAnimationType(_ type: AnimationType) {
         animationType = type
+    }
+    
+    /// 设置是否禁用最小触摸目标尺寸限制
+    public func setMinimumTouchTargetDisabled(_ disabled: Bool) {
+        isMinimumTouchTargetDisabled = disabled
     }
     
     /// 重置固定尺寸标记，恢复完全自适应行为
@@ -767,9 +787,19 @@ public final class FlexButton: UIView {
             totalHeight = contentInsets.top + contentInsets.bottom
         }
         
-        // 确保符合苹果推荐的最小触摸目标尺寸
-        let finalWidth = max(ceil(totalWidth), Self.minimumTouchTarget)
-        let finalHeight = max(ceil(totalHeight), Self.minimumTouchTarget)
+        // 确保符合苹果推荐的最小触摸目标尺寸（除非被禁用）
+        let finalWidth: CGFloat
+        let finalHeight: CGFloat
+        
+        if isMinimumTouchTargetDisabled {
+            // 禁用最小触摸目标限制，完全基于内容计算
+            finalWidth = ceil(totalWidth)
+            finalHeight = ceil(totalHeight)
+        } else {
+            // 应用最小触摸目标限制
+            finalWidth = max(ceil(totalWidth), Self.minimumTouchTarget)
+            finalHeight = max(ceil(totalHeight), Self.minimumTouchTarget)
+        }
         
         let result = CGSize(width: finalWidth, height: finalHeight)
         

@@ -451,7 +451,48 @@ extension FlexButtonExample {
         }
         addButton(fixedSizeButton, x: margin + 180, y: currentY, width: 150, height: 50)
         
-        return currentY + 70
+        currentY += 70
+        
+        // 禁用最小触摸目标尺寸按钮
+        let noMinSizeButton = FlexButton()
+        noMinSizeButton.configure(
+            title: "小按钮",
+            backgroundColor: .systemRed,
+            titleColor: .white,
+            isMinimumTouchTargetDisabled: true  // 禁用最小触摸目标限制
+        )
+        noMinSizeButton.onTap = { _ in
+            print("🔘 小按钮被点击 - 不受44pt最小尺寸限制")
+        }
+        addButton(noMinSizeButton, x: margin, y: currentY, width: 60, height: 30)
+        
+        // 对比：正常按钮（受最小触摸目标限制）
+        let normalSizeButton = FlexButton()
+        normalSizeButton.configure(
+            title: "正常",
+            backgroundColor: .systemGreen,
+            titleColor: .white,
+            isMinimumTouchTargetDisabled: false  // 保持默认的最小触摸目标限制
+        )
+        normalSizeButton.onTap = { _ in
+            print("🔘 正常按钮被点击 - 受44pt最小尺寸限制")
+        }
+        addButton(normalSizeButton, x: margin + 80, y: currentY, width: 60, height: 30)
+        
+        // 说明标签
+        let explanationLabel = UILabel()
+        explanationLabel.text = "左侧：禁用最小尺寸限制 | 右侧：保持最小尺寸限制"
+        explanationLabel.font = .systemFont(ofSize: 12)
+        explanationLabel.textColor = .secondaryLabel
+        explanationLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        contentView.addSubview(explanationLabel)
+        NSLayoutConstraint.activate([
+            explanationLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: margin),
+            explanationLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: currentY + 40)
+        ])
+        
+        return currentY + 80
     }
 }
 

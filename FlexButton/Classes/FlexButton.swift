@@ -111,6 +111,9 @@ public final class FlexButton: UIView {
     
     /// 是否启用点击动画效果
     public var isAnimationEnabled: Bool = true
+
+    /// 是否启用外观更新动画（setTitle/setImage/setState 等触发的 updateAppearance）
+    public var isAppearanceAnimationEnabled: Bool = true
     
     /// 点击动画类型
     public var animationType: AnimationType = .scale
@@ -343,6 +346,11 @@ public final class FlexButton: UIView {
     /// 设置动画类型
     public func setAnimationType(_ type: AnimationType) {
         animationType = type
+    }
+
+    /// 设置是否启用外观更新动画
+    public func setAppearanceAnimationEnabled(_ enabled: Bool) {
+        isAppearanceAnimationEnabled = enabled
     }
     
     /// 设置是否禁用最小触摸目标尺寸限制
@@ -967,7 +975,7 @@ public final class FlexButton: UIView {
             self.updateAccessibilityLabel()
         }
         
-        if animated {
+        if animated && isAppearanceAnimationEnabled {
             UIView.animate(withDuration: Self.defaultAnimationDuration) {
                 updateBlock()
             }
